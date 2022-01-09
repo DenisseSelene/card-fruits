@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+/* bg colores */
+
+.bg-fucsia {
+  background-color: #f72585;
+}
+.bg-naranja {
+  background-color: #ff9770;
+}
+.bg-violeta {
+  background-color: #7209b7;
+}
+.bg-verde {
+  background-color: #8cb369;
+}
+.bg-amarillo {
+  background-color: #ffe066;
+}
+
+/* para que flexbox funcione todos los elementos tienen que estar dentro de un contenedor PADRE con la propiedad display flex!  */
+
+.contenedor-flex {
+  width: 100%;
+  height: 600px;
+  display: flex;
+
+
+  /* flex-direction especifica cómo colocar los objetos flexibles en el contenedor flexible */
+  flex-direction: row;
+
+  /* especifica si los elementos "hijos" son obligados a permanecer en una misma línea o pueden fluir */
+  flex-wrap: wrap;
+
+  /* define cómo el navegador distribuye el espacio entre y alrededor de los items flex    */
+  justify-content: center;
+
+  /* controla la alineación de todos los elementos en el eje transversal.    */
+  /* align-self en cambio controla la alineación de un elemento individual en el eje transversal. */
+  align-items: center;
+}
+
+/* elementos HIJO de flexbox. */
+
+.elemento {
+  text-align: center;
+  color: white;
+  width: 250px;
+  height: 350px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.elemento:hover{
+  background-position: center;
+  background-size: cover;
+  transition: all 2.5s ease-in-out; 
+}
+
+.frutilla:hover {
+  background-image: url(./img/frutillas.jpg);
+
+}
+
+.naranjas:hover {
+  background-image: url(/img/naranjas.jpg);
+}
+
+.uvas:hover {
+  background-image: url(./img/uvas.jpg);
+}
+
+.menta:hover {
+  background-image: url(./img/menta.jpg);
+}
+
+.bananas:hover {
+  background-image: url(./img/bananas.jpg);
+}
